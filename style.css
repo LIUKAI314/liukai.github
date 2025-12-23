@@ -1,0 +1,49 @@
+/* 基础样式 */
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 标题样式 */
+h1 {
+    color: #27ae60;
+    border-bottom: 3px solid #27ae60;
+    padding-bottom: 10px;
+}
+
+/* 商品列表 */
+ul {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* 价格标签 */
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* 按钮样式 */
+.button {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
