@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邻里鲜社区生鲜店 - 新鲜食材1小时送到家</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>邻里鲜</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#products">商品</a>
+                <a href="#order">订购</a>
+                <a href="#contact">联系</a>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                0574-8888-9999
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>新鲜食材 · 1小时速达</h1>
+            <p class="subtitle">阳光花园社区您的专属"菜篮子"</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-sun"></i>
+                    <h3>凌晨直采</h3>
+                    <p>每日3点新鲜到货</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>1小时速达</h3>
+                    <p>3公里内快速配送</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>品质保证</h3>
+                    <p>检疫合格才上架</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tag"></i>
+                    <h3>明码实价</h3>
+                    <p>价格透明放心买</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品展示 -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>今日推荐商品</h2>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img veg"></div>
+                    <h3>新鲜蔬菜</h3>
+                    <ul>
+                        <li>上海青 <span class="price">2.98元/500g</span></li>
+                        <li>西红柿 <span class="price">3.98元/500g</span></li>
+                        <li>土豆 <span class="price">2.58元/500g</span></li>
+                    </ul>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img meat"></div>
+                    <h3>鲜肉禽蛋</h3>
+                    <ul>
+                        <li>五花肉 <span class="price">15.80元/500g</span></li>
+                        <li>鸡腿肉 <span class="price">12.80元/500g</span></li>
+                        <li>鸡蛋 <span class="price">6.50元/斤</span></li>
+                    </ul>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img semi"></div>
+                    <h3>半成品净菜</h3>
+                    <ul>
+                        <li>宫保鸡丁套餐 <span class="price">12.8元/份</span></li>
+                        <li>鱼香肉丝套餐 <span class="price">11.8元/份</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 晚间特惠 -->
+            <div class="clearance">
+                <h3><i class="fas fa-moon"></i> 晚间清仓特惠</h3>
+                <p>每日19:00后：叶菜类 <strong>5折</strong> · 鲜肉类 <strong>8折</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 订购方式 -->
+    <section id="order" class="ordering">
+        <div class="container">
+            <h2>在线订购</h2>
+            
+            <div class="platforms">
+                <div class="platform">
+                    <i class="fab fa-weixin"></i>
+                    <h3>微信小程序</h3>
+                    <p>扫码加入社区群下单</p>
+                    <div class="qr-code">
+                        <p>微信扫码</p>
+                        <small>(小程序开发中)</small>
+                    </div>
+                </div>
+                
+                <div class="platform">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>美团外卖</h3>
+                    <p>搜索"邻里鲜社区生鲜店"</p>
+                    <button class="btn" onclick="window.open('https://waimai.meituan.com')">
+                        打开美团
+                    </button>
+                </div>
+                
+                <div class="platform">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>饿了么</h3>
+                    <p>搜索"邻里鲜阳光花园店"</p>
+                    <button class="btn" onclick="window.open('https://www.ele.me')">
+                        打开饿了么
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>营业时间</h4>
+                        <p>06:00 - 21:00 (全年无休)</p>
+                        <p id="status">正在检测营业状态...</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>店铺地址</h4>
+                        <p>宁波市鄞州区阳光花园社区沿街商铺</p>
+                        <p>配送范围：社区周边3公里</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>联系方式</h4>
+                        <p>电话：0574-8888-9999</p>
+                        <p>微信：LinLiXian2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>© 2025 邻里鲜社区生鲜店 · 新鲜食材专家</p>
+            <p class="tagline">今日鲜 · 今日毕</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
