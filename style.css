@@ -1,0 +1,355 @@
+/* 基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏 */
+.navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.logo i {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #27ae60;
+}
+
+.phone {
+    background: #27ae60;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* 首页横幅 */
+.hero {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* 特性展示 */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.feature i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* 商品展示 */
+.products {
+    padding: 80px 0;
+    background: white;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 36px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.product-img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-img.veg {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/vegetables.jpg');
+}
+
+.product-img.meat {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/meat.jpg');
+}
+
+.product-img.semi {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/semi.jpg');
+}
+
+.product-card h3 {
+    color: #27ae60;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.product-card ul {
+    list-style: none;
+}
+
+.product-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* 晚间清仓 */
+.clearance {
+    background: #f39c12;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.clearance h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.clearance i {
+    margin-right: 10px;
+}
+
+/* 订购方式 */
+.ordering {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.ordering h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 36px;
+}
+
+.platforms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.platform {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.platform i {
+    font-size: 50px;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.platform h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.qr-code {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #219653;
+}
+
+/* 联系信息 */
+.contact {
+    padding: 80px 0;
+    background: white;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 36px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.info-item i {
+    font-size: 30px;
+    color: #27ae60;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.info-item h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 页脚 */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #95a5a6;
+    margin-top: 10px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        margin: 20px 0;
+    }
+    
+    .nav-links a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .phone {
+        margin-top: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-grid,
+    .platforms,
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
